@@ -1,55 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-
-// Static data
-const educationData = [
-    {
-        title: "Frontend Developer",
-        organisation: { name: "Tech Company", href: "https://techcompany.com" },
-        date: "Jan 2021 - Present",
-        location: "Remote",
-        description: "Developing and maintaining the front end of the company's main product.",
-    },
-    {
-        title: "Backend Developer",
-        organisation: { name: "Another Tech Company", href: "https://anothertechcompany.com" },
-        date: "Feb 2019 - Dec 2020",
-        location: "Remote",
-        description: "Working on backend services and APIs.",
-    },
-    {
-        title: "Frontend Developer",
-        organisation: { name: "Tech Company", href: "https://techcompany.com" },
-        date: "Jan 2021 - Present",
-        location: "Remote",
-        description: "Developing and maintaining the front end of the company's main product.",
-    },
-    {
-        title: "Backend Developer",
-        organisation: { name: "Another Tech Company", href: "https://anothertechcompany.com" },
-        date: "Feb 2019 - Dec 2020",
-        location: "Remote",
-        description: "Working on backend services and APIs.",
-    },
-    {
-        title: "Frontend Developer",
-        organisation: { name: "Tech Company", href: "https://techcompany.com" },
-        date: "Jan 2021 - Present",
-        location: "Remote",
-        description: "Developing and maintaining the front end of the company's main product.",
-    },
-    {
-        title: "Backend Developer",
-        organisation: { name: "Another Tech Company", href: "https://anothertechcompany.com" },
-        date: "Feb 2019 - Dec 2020",
-        location: "Remote",
-        description: "Working on backend services and APIs.",
-    },
-    // Add more static items as needed
-];
+import { educationData } from "../../utils/constant";
 
 // ShowCaseLiIcon Component
-function ShowCaseLiIcon({ iconRef }) {
+const ShowCaseLiIcon = ({ iconRef }) => {
     const { scrollYProgress } = useScroll({
         target: iconRef,
         offset: ["center end", "center center"],
@@ -80,8 +34,7 @@ function ShowCaseLiIcon({ iconRef }) {
     );
 }
 
-// EducationShowcaseListItem Component
-function EducationShowcaseListItem({ data }) {
+const EducationShowcaseListItem = ({ data }) => {
     const ref = useRef(null);
 
     return (
@@ -117,7 +70,7 @@ function EducationShowcaseListItem({ data }) {
     );
 }
 
-// EducationShowcaseList Component
+
 export default function EducationShowcaseList() {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({

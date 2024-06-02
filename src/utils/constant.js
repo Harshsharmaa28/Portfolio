@@ -36,105 +36,133 @@ export const language = [
 
 export const libraries = [
     {
-        image: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
         title: "React",
         id: 1
     },
     {
-        image: "",
+        image: "https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png",
         title: "Next.js",
         id: 2
     },
     {
-        image: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png",
         title: "Tailwindcss",
         id: 3
     },
     {
-        image: "",
+        image: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
         title: "MUI",
         id: 4
     },
     {
-        image: "",
+        image: "https://www.svgrepo.com/show/354262/react-router.svg",
         title: "React Router Dom",
         id: 5
     },
     {
-        image: "",
+        image: "https://cdn.worldvectorlogo.com/logos/redux.svg",
         title: "Redux",
         id: 6
+    },
+    {
+        image: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg",
+        title: "Framer motion",
+        id: 7
     }
 ]
 
 export const backend = [
     {
-        image: "",
-        title: "HTML",
+        image: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+        title: "Node js",
         id: 1
     },
     {
-        image: "",
-        title: "HTML",
+        image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+        title: "Express",
         id: 2
     },
-    {
-        image: "",
-        title: "HTML",
-        id: 3
-    },
+    // {
+    //     image: "",
+    //     title: "Firebase",
+    //     id: 3
+    // },
 
 ]
 
 export const Tools = [
     {
         image: "",
-        title: "HTML",
+        title: "Github",
         id: 1
     },
     {
         image: "",
-        title: "HTML",
+        title: "Git",
         id: 2
     },
     {
         image: "",
-        title: "HTML",
+        title: "Postman",
         id: 3
     },
     {
         image: "",
-        title: "HTML",
+        title: "Docker",
         id: 4
     },
-    {
-        image: "",
-        title: "HTML",
-        id: 5
-    },
+    // {
+    //     image: "",
+    //     title: "HTML",
+    //     id: 5
+    // },
 ]
 
 export const database = [
     {
         image: "",
-        title: "HTML",
+        title: "MongoDB",
         id: 1
     },
     {
         image: "",
-        title: "HTML",
+        title: "SQL",
         id: 2
     },
-    {
-        image: "",
-        title: "HTML",
-        id: 3
-    },
-    {
-        image: "",
-        title: "HTML",
-        id: 4
-    },
+    // {
+    //     image: "",
+    //     title: "HTML",
+    //     id: 3
+    // },
+    // {
+    //     image: "",
+    //     title: "HTML",
+    //     id: 4
+    // },
 ]
 
-
+export const educationData = [
+    {
+        title: "B.Tech in Electronics and Communication",
+        organisation: { name: "National Institute of Technology Patna", href: "https://www.nitp.ac.in/" },
+        date: "2022 - 2026",
+        location: "Patna,Bihar",
+        description: "Developing and maintaining the front end of the company's main product.",
+    },
+    {
+        title: "Senior Secondary Education",
+        organisation: { name: "The Lucknow Public Collegiate", href: "" },
+        date: "2019-2021",
+        location: "Lucknow",
+        description: "",
+    },
+    {
+        title: "Secondary Education",
+        organisation: { name: "The Lucknow Public Collegiate", href: "" },
+        date: "2018-2019",
+        location: "Lucknow",
+        description: "",
+    },
+    // Add more static items as needed
+];
