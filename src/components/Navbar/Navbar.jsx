@@ -11,7 +11,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const selectedPage = useSelector((state) => state.navbar.showSelectedPage);
   return (
-    <div className='sticky top-0 w-full'>
+    <div className=' z-10 sticky top-0 w-full'>
       <div className=' py-24 flex justify-between mx-32 h-20 items-center'>
         <div>
           <img className=' w-[5rem] h-[5rem]' src={logo} alt="" />

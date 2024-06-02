@@ -93,22 +93,22 @@ export const backend = [
 
 export const Tools = [
     {
-        image: "",
+        image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
         title: "Github",
         id: 1
     },
     {
-        image: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
         title: "Git",
         id: 2
     },
     {
-        image: "",
+        image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
         title: "Postman",
         id: 3
     },
     {
-        image: "",
+        image: "https://static-00.iconduck.com/assets.00/docker-icon-1024x739-rivf80b4.png",
         title: "Docker",
         id: 4
     },
@@ -121,12 +121,12 @@ export const Tools = [
 
 export const database = [
     {
-        image: "",
+        image: "https://www.svgrepo.com/show/354090/mongodb.svg",
         title: "MongoDB",
         id: 1
     },
     {
-        image: "",
+        image: "https://pngimg.com/uploads/mysql/mysql_PNG20.png",
         title: "SQL",
         id: 2
     },
@@ -166,3 +166,47 @@ export const educationData = [
     },
     // Add more static items as needed
 ];
+
+export const projectData = [
+    {
+        imageUrl: "./assets/nex.png",
+        title: "Nex-Learn",
+        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
+        hostedUrl: "https://nex-learn.vercel.app/",
+        key: 1,
+    },
+    {
+        imageUrl: "./assets/nex.png",
+        title: "Nex-Learn",
+        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
+        hostedUrl: "https://nex-learn.vercel.app/",
+        key: 2,
+    },
+    {
+        imageUrl: "./assets/nex.png",
+        title: "Nex-Learn",
+        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
+        hostedUrl: "https://nex-learn.vercel.app/",
+        key: 3,
+    },
+    {
+        imageUrl:"./assets/nex.png",
+        title: "Nex-Learn",
+        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
+        hostedUrl: "https://nex-learn.vercel.app/",
+        key: 4,
+    },
+
+    
+    // {
+    //     imageUrl: "",
+    //     title: "",
+    //     description: "",
+    //     source_code: "",
+    //     hostedUrl: "",
+    // },
+]
