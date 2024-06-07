@@ -1,29 +1,41 @@
 import React, { useState } from 'react'
 import { logo } from '../../utils/constant';
-import { Moon } from 'lucide-react';
+import { CodeSquare, Moon } from 'lucide-react';
 import { motion } from "framer-motion"
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleSelectedPage } from '../../utils/navbarSlice';
+import { toggleSelectedPage, toggleSelectedTheme } from '../../utils/navbarSlice';
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const selectedPage = useSelector((state) => state.navbar.showSelectedPage);
+  console.log(selectedPage)
+  const theme = useSelector((state) => state.navbar.selectedTheme);
+  const switchTheme = () =>{
+    console.log(theme)
+    console.log("clicked")
+    dispatch(toggleSelectedTheme());
+  }
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
   return (
-    <div className=' z-10 sticky top-0 w-full'>
-      <div className=' py-24 flex justify-between mx-32 h-20 items-center'>
-        <div>
-          <img className=' w-[5rem] h-[5rem]' src={logo} alt="" />
+    <div className=' vsm:max-sm:flex vsm:max-sm:justify-center z-10 sticky top-0 w-full'>
+      <div className=' py-14 md:py-24 flex justify-between md:mx-32 h-20 items-center'>
+        <div className='  vsm:max-sm:hidden'>
+          <img className=' vsm:max-sm:hidden w-[5rem] h-[5rem]' src={logo} alt="" />
         </div>
-        <div className='backdrop-blur-md shadow-md ring-1 ring-zinc-200  flex gap-4 px-6 border-s-fuchsia-900 h-14 rounded-full justify-center items-center'>
+        <div className={`backdrop-blur-md shadow-md ring-1 ${ theme ? ' ring-zinc-200' : ' ring-accent'}  flex gap-4 px-6 border-s-fuchsia-900 h-14 rounded-full justify-center items-center`}>
           <motion.span
             whileHover={{ scale: 1.08 }}
             onClick={() => {
               dispatch(toggleSelectedPage("Home"));
               navigate("/")
             }}
-            className={`px-4 py-1.5 rounded-full cursor-pointer ${selectedPage === "Home" ? 'bg-accent text-white font-semibold' : ' text-gray-900'}`}
+            className={`px-4 py-1.5 rounded-full cursor-pointer  ${!theme ? ' text-white' : ''} ${ selectedPage === "Home" ? ' bg-accent text-white font-semibold' : ' text-gray-900'}`}
           >
             Home
           </motion.span>
@@ -33,7 +45,7 @@ const Navbar = () => {
               dispatch(toggleSelectedPage("About"));
               navigate("/about")
             }}
-            className={`px-4 py-1.5 rounded-full cursor-pointer ${selectedPage === "About" ? 'bg-accent text-white font-semibold' : ' text-gray-900'}`}
+            className={`px-4 py-1.5 text-gray-900 rounded-full cursor-pointer ${!theme ? ' text-white' : ''} ${selectedPage === "About"  ? 'bg-accent text-white font-semibold' : ' text-gray-900 '} `}
           >
             About
           </motion.span>
@@ -43,11 +55,12 @@ const Navbar = () => {
               dispatch(toggleSelectedPage("Project"));
               navigate("/projects")
             }}
-            className={`px-4 py-1.5 rounded-full cursor-pointer ${selectedPage === "Project" ? 'bg-accent text-white font-semibold' : ' text-gray-900'}`}
+            className={`px-4 py-1.5 rounded-full cursor-pointer  ${!theme ? ' text-white' : ''} ${selectedPage === "Project" ? 'bg-accent text-white font-semibold' : ' text-gray-900'}`}
           >
             Projects
           </motion.span>
           <motion.span
+          onClick={switchTheme}
             whileHover={{ scale: 1.08 }}
             className={`py-1.5 rounded-full cursor-pointer`}
           >

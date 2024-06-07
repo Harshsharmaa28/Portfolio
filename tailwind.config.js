@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       screens: {
-        xs: "360px",
+        vsm: "250px",
       },
       dropShadow: {
         accent: "0 0 1em hsl(var(--accent))",

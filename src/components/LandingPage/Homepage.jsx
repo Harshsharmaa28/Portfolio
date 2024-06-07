@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useSelector } from 'react-redux';
 
 const Homepage = () => {
+    const theme = useSelector((store) => store.navbar.selectedTheme);
     return (
-        <div className='w-full py-16'>
+        <div className={`${!theme? ' bg-black' : ''} w-full py-16`}>
             <motion.div
                 animate={{
                     transition: {
@@ -14,12 +16,12 @@ const Homepage = () => {
                         },
                     },
                 }}
-                className='flex flex-col mx-32 py-20 flex-wrap w-[50%]'>
-                <h1 data-aos="fade-up" data-aos-duration="500" className=' py-2 text-accent font-bold text-8xl'>Harsh Sharma</h1>
+                className='vsm:max-sm:mx-4 w-screen  flex flex-col md:mx-32 md:py-20 flex-wrap'>
+                <h1 data-aos="fade-up" data-aos-duration="500" className={` vsm:max-sm:text-6xl py-2 text-accent font-bold text-8xl`}>Harsh Sharma</h1>
                 <motion.span
-                    data-aos="fade-up" data-aos-duration="1000" className=' font-bold text-black text-3xl'>Front and React.js Developer</motion.span>
+                  data-aos-offset="0"  data-aos="fade-up" data-aos-duration="1000" className={`vsm:max-sm:text-2xl font-bold text-black text-3xl ${!theme? 'text-white' : ' text-black'}`}>Front and React.js Developer</motion.span>
                 <br />
-                <span data-aos="fade-up" data-aos-duration="1500" className=' text-3xl'><span className=' text-accent font-semibold'>Hi,</span> I'm <span className=' text-accent font-semibold'>Harsh Sharma</span> , I turn vision into reality with code and design.
+                <span className={` flex flex-wrap vsm:max-sm:text-2xl text-3xl ${!theme? 'text-white' : ' text-black'}`} data-aos="fade-up" data-aos-duration="1500"><span className='text-accent font-semibold'>Hi,</span> I'm <span className=' text-accent font-semibold'>Harsh Sharma</span> , I turn vision into reality with code and design.
                 </span>
             </motion.div>
         </div>

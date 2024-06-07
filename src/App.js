@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useSearchParams } from 'react-router-dom';
 import Layout from './utils/Layout';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
@@ -11,12 +11,14 @@ import Landing from './components/LandingPage/Landing';
 import About from './pages/About/About';
 import ProjectDescription from './pages/projects/ProjectDescription';
 import CursorTrailCanvas from './components/cursor-trail-canvas';
+import { useSelector } from 'react-redux';
 
 
 function App() {
   useEffect(() => {
     AOS.init();
   }, []);
+  
   const links = [
     {
       path: "/",
@@ -34,8 +36,12 @@ function App() {
       id: 3
     }
   ]
+  const theme = useSelector((store) => store.navbar.selectedTheme);
+  useEffect(() => {
+    AOS.refresh(); // Reinitialize AOS on theme change
+  }, [theme]);
   return (
-    <div className=''>
+    <div className={` overflow-x-hidden ${!theme? 'bg-black':''} `}>
       <CursorTrailCanvas color="" />
       <Routes>
         {
