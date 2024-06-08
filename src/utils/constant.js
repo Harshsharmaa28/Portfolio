@@ -13,13 +13,13 @@ export const language = [
         id: 2
     },
     {
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-        title: "Javascript",
+        image: "https://www.svgrepo.com/show/184143/java.svg",
+        title: "Java",
         id: 3
     },
     {
-        image: "https://www.svgrepo.com/show/184143/java.svg",
-        title: "Java",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
+        title: "Javascript",
         id: 4
     },
     {
@@ -180,40 +180,40 @@ export const projectData = [
         imageUrl: "./assets/portfolio.png",
         title: "My-portfolio",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
-        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
-        hostedUrl: "https://nex-learn.vercel.app/",
+        source_code: "https://github.com/Harshsharmaa28/Portfolio",
+        hostedUrl: "https://harshsharma-portfolio.vercel.app/",
         key: 2,
     },
     {
         imageUrl: "./assets/bic.png",
         title: "Karigar",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
-        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
-        hostedUrl: "https://nex-learn.vercel.app/",
+        source_code: "https://github.com/Harshsharmaa28/KarigarBIC",
+        hostedUrl: "https://karigar-bic-7lr9.vercel.app/",
         key: 3,
     },
     {
         imageUrl:"./assets/netflix.png",
         title: "Netflix-Gpt",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
-        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
-        hostedUrl: "https://nex-learn.vercel.app/",
+        source_code: "https://github.com/Harshsharmaa28/Netflix-Gpt",
+        hostedUrl: "https://harsh-netflix-gpt.vercel.app/",
         key: 4,
     },
     {
         imageUrl:"./assets/calci.png",
         title: "Calculator",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
-        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
-        hostedUrl: "https://nex-learn.vercel.app/",
+        source_code: "https://github.com/Harshsharmaa28/Calculator",
+        hostedUrl: "https://harshsharmaa28.github.io/Calculator/",
         key: 4,
     },
     {
         imageUrl:"./assets/giphy.png",
         title: "Nex-Learn",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
-        source_code: "https://github.com/Harshsharmaa28/404-FOUND",
-        hostedUrl: "https://nex-learn.vercel.app/",
+        source_code: "https://github.com/Harshsharmaa28/Giphy-storee",
+        hostedUrl: "https://giphy-store-rtl3.vercel.app/",
         key: 4,
     },
 
@@ -225,4 +225,21 @@ export const projectData = [
     //     source_code: "",
     //     hostedUrl: "",
     // },
+]
+export const projectHeadingData = [
+    {
+        sno:"1.",
+        title: "Nex-Learn Platform",
+        tech: "#React #Tailwind #firebase #"
+    },
+    {
+        sno:"2.",
+        title: "Netflix-Gpt",
+        tech: "#React #Tailwind #firebase #"
+    },
+    {
+        sno:"3.",
+        title: "Karigar",
+        tech: "#React #Tailwind #firebase #"
+    },
 ]

@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import { educationData } from "../../utils/constant";
+import { useSelector } from "react-redux";
 
 // ShowCaseLiIcon Component
+
 const ShowCaseLiIcon = ({ iconRef }) => {
     const { scrollYProgress } = useScroll({
         target: iconRef,
@@ -36,7 +38,7 @@ const ShowCaseLiIcon = ({ iconRef }) => {
 
 const EducationShowcaseListItem = ({ data }) => {
     const ref = useRef(null);
-
+    const theme = useSelector((store) => store.navbar.selectedTheme);
     return (
         <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
             <ShowCaseLiIcon iconRef={ref} />
@@ -48,7 +50,7 @@ const EducationShowcaseListItem = ({ data }) => {
                     duration: 0.4,
                 }}
             >
-                <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
+                <h3 className={` ${!theme ? 'text-white': ' '} text-base font-bold text-foreground sm:text-xl md:text-2xl`}>
                     {data.title}{" "}
                     <a
                         href={data.organisation.href}
@@ -59,10 +61,10 @@ const EducationShowcaseListItem = ({ data }) => {
                         @{data.organisation.name}
                     </a>
                 </h3>
-                <span className="text-sm font-medium text-foreground xs:text-base">
+                <span className={`${!theme ? 'text-white': ' '} text-sm font-medium text-foreground xs:text-base`}>
                     {data.date} | {data.location}
                 </span>
-                <p className="text-sm font-medium text-muted-foreground xs:text-base">
+                <p className={`${!theme ? 'text-white': ' '} text-sm font-medium text-muted-foreground xs:text-base`}>
                     {data.description}
                 </p>
             </motion.div>
@@ -72,6 +74,7 @@ const EducationShowcaseListItem = ({ data }) => {
 
 
 export default function EducationShowcaseList() {
+    const theme = useSelector((store) => store.navbar.selectedTheme);
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -80,7 +83,7 @@ export default function EducationShowcaseList() {
 
     return (
         <div className="mx-auto my-40 max-w-7xl px-6 sm:px-14 md:my-60 md:px-20">
-            <h2 className="md:mb-30 mb-16 w-full bg-gradient-to-r from-accent/70 to-accent bg-clip-text text-center text-3xl font-bold text-transparent xs:text-4xl sm:text-6xl md:text-8xl">
+            <h2 className={` ${!theme ? 'text-white': ' text-accent'} md:mb-30 mb-16 w-full bg-gradient-to-r from-accent/70 to-accent bg-clip-text text-center text-3xl font-bold xs:text-4xl sm:text-6xl md:text-8xl`}>
                Education
             </h2>
             <div ref={ref} className="relative w-full md:mx-auto md:w-[80%]">

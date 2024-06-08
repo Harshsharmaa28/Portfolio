@@ -10,7 +10,7 @@ const SkillsList = ({title,data}) => {
       <div className=' flex gap-5 flex-wrap '>
         {
             data?.map((item,idx) => (
-                <div data-aos-duration={`${500 + idx * 500}`} data-aos="fade-right" className={`rounded-xl items-center border border-gray-300 flex gap-4 px-6 py-3 ${!theme ? ' bg-gray-700 border-0':' '}`}>
+                <div data-aos-duration={`${500 + idx * 500}`} data-aos="fade-right" className={`rounded-xl items-center border border-gray-300 flex gap-2 md:gap-4 px-2 py-2 md:px-6 md:py-3 ${!theme ? ' bg-gray-700 border-0':' '}`}>
                     <img key={item.id} className='w-[1rem] h-[1rem] md:w-[2rem] md:h-[2rem]' src={item.image} alt="Error" />
                     <span key={item.id} className={` text-xl ${!theme ? 'text-white ':' text-black '}`}>{item.title}</span>
                 </div>

@@ -12,6 +12,7 @@ import About from './pages/About/About';
 import ProjectDescription from './pages/projects/ProjectDescription';
 import CursorTrailCanvas from './components/cursor-trail-canvas';
 import { useSelector } from 'react-redux';
+import ScrollToTop from './hooks/ScrollToTop/ScrollToTop';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
   }, [theme]);
   return (
     <div className={` overflow-x-hidden ${!theme? 'bg-black':''} `}>
+      <ScrollToTop/>
       <CursorTrailCanvas color="" />
       <Routes>
         {
