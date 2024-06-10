@@ -17,6 +17,6 @@ const Landing = () => {
       <Contact />
     </div>
   )
-}
+} 
 
 export default Landing

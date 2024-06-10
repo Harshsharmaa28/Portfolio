@@ -42,7 +42,7 @@ function App() {
     AOS.refresh(); // Reinitialize AOS on theme change
   }, [theme]);
   return (
-    <div className={` overflow-x-hidden ${!theme? 'bg-black':''} `}>
+    <div className={`  ${!theme? 'bg-black':''} `}>
       <ScrollToTop/>
       <CursorTrailCanvas color="" />
       <Routes>

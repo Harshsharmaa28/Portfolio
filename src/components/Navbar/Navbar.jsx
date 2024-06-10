@@ -15,15 +15,13 @@ const Navbar = () => {
   console.log(selectedPage)
   const theme = useSelector((state) => state.navbar.selectedTheme);
   const switchTheme = () =>{
-    console.log(theme)
-    console.log("clicked")
     dispatch(toggleSelectedTheme());
   }
   useEffect(() => {
     AOS.refresh();
   }, []);
   return (
-    <div className=' vsm:max-sm:flex vsm:max-sm:justify-center z-10 sticky top-0 w-full'>
+    <div className=' vsm:max-sm:flex vsm:max-sm:justify-center z-10 sticky top-0 overflow-hidden'>
       <div className=' py-14 md:py-24 flex justify-between md:mx-32 h-20 items-center'>
         <div className='  vsm:max-sm:hidden'>
           <img className=' vsm:max-sm:hidden w-[5rem] h-[5rem]' src={logo} alt="" />

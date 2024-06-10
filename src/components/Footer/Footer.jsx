@@ -2,6 +2,7 @@ import { Copyright, Github, Linkedin } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Footer = () => {
   return (
     <div className=' mx-4 py-16 md:mx-32 flex justify-between'>
@@ -16,7 +17,7 @@ const Footer = () => {
         <Link to={'https://github.com/Harshsharmaa28/Portfolio'}>
           <Github className=' text-accent broder-2 border-accent' />
         </Link>
-        <Link to={'/'}>
+        <Link to={'https://www.linkedin.com/in/harsh-sharma-518257259'}>
           <Linkedin className=' text-accent broder-2 border-accent' />
         </Link>
         <Link>

@@ -1,4 +1,3 @@
-// ContactForm.js
 import { Send, X } from 'lucide-react';
 import React from 'react';
 import { useForm } from 'react-hook-form';
@@ -16,25 +15,25 @@ const ContactForm = ({ setsendMail }) => {
     };
 
     return (
-        <div className=' flex justify-center items-center md:h-screen w-screen absolute backdrop-blur-md -mt-20'>
-            <section data-aos-duration="500" data-aos="fade-up" id="contact" className=" rounded-xl mx-32 py-10 px-5  absolute bg-gray-900 z-10">
-                <div className=' flex justify-between'>
-                    <div className=' text-white flex gap-2 font-semibold'>
+        <div className='flex justify-center items-center vsm:max-sm:-mt-52 w-full absolute backdrop-blur-md'>
+            <section data-aos-duration="500" data-aos="fade-up" id="contact" className="rounded-xl mx-4 sm:mx-8 md:mx-16 lg:mx-32 py-10 px-5 bg-gray-900 z-10 relative">
+                <div className='flex justify-between items-center mb-6'>
+                    <div className='text-white flex gap-2 font-semibold'>
                         <Send />
                         <span>Send Message</span>
                     </div>
-                    <X onClick={() => setsendMail(false)} className=' hover:cursor-pointer text-white' />
+                    <X onClick={() => setsendMail(false)} className='hover:cursor-pointer text-white' />
                 </div>
-                <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Contact Me</h2>
-                    <p className="mt-4 text-gray-600 dark:text-gray-300">
+                <div className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-100">Contact Me</h2>
+                    <p className="mt-4 text-gray-300">
                         If you have any questions or would like to work together, feel free to reach out!
                     </p>
                 </div>
-                <div className="mt-12 max-w-lg mx-auto">
+                <div className="max-w-lg mx-auto">
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                                 Name
                             </label>
                             <input
@@ -46,7 +45,7 @@ const ContactForm = ({ setsendMail }) => {
                             {errors.name && <p className="mt-2 text-sm text-red-600">{errors.name.message}</p>}
                         </div>
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-300">
                                 Email
                             </label>
                             <input
@@ -58,7 +57,7 @@ const ContactForm = ({ setsendMail }) => {
                             {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email.message}</p>}
                         </div>
                         <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                            <label htmlFor="message" className="block text-sm font-medium text-gray-300">
                                 Message
                             </label>
                             <textarea

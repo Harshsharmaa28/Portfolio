@@ -1,5 +1,6 @@
 export const logo = "./assets/LOGO.png"
 export const nexlearn = "./assets/nex.png"
+export const email = "harshsharma01328@gmail.com"
 
 export const language = [
     {

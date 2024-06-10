@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 const Homepage = () => {
     const theme = useSelector((store) => store.navbar.selectedTheme);
     return (
-        <div className={`${!theme? ' bg-black' : ''} w-full py-16`}>
+        <div className={`${!theme? ' bg-black' : ''} w-full py-16 overflow-hidden`}>
             <motion.div
                 animate={{
                     transition: {
