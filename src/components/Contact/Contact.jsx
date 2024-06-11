@@ -15,7 +15,7 @@ const Contact = () => {
           <div
             className="inline-flex items-center gap-2 rounded-full bg-background px-3 py-2 text-accent transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-foreground hover:text-background"
           >Get In Touch</div>
-          <span className='vsm:max-sm:text-xl text-white md:text-7xl'>{email}</span>
+          <span className='vsm:max-sm:text-xl text-white text-5xl xl:text-7xl'>{email}</span>
           <button
             className="inline-flex items-center gap-2 rounded-md bg-background px-3 py-2 text-accent transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-foreground hover:text-background"
             onClick={() => setsendMail(true)}

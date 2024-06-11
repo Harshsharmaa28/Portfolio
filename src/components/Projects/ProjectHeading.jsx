@@ -12,9 +12,9 @@ const ProjectHeading = ({ Sno, title, tech }) => {
             <div className='py-6'>
                 <div className='flex flex-col'>
                     <div className=' flex gap-2 w-auto'>
-                        <span className='vsm:max-sm:text-3xl hover:cursor-pointer font text-accent font-semibold text-6xl'>{Sno}</span>
+                        <span className='vsm:max-sm:text-3xl hover:cursor-pointer font text-accent font-semibold text-5xl xl:text-6xl'>{Sno}</span>
                         <Link onClick={() => dispatch(toggleSelectedPage("Project"))} to={'/projects'}>
-                            <h1 onMouseEnter={() => setClick(true)} onMouseLeave={() => setClick(false)} className='vsm:max-sm:text-3xl relative hover:cursor-pointer hover:opacity-100 md:opacity-75 font text-accent font-semibold md:text-6xl'>{title}
+                            <h1 onMouseEnter={() => setClick(true)} onMouseLeave={() => setClick(false)} className='vsm:max-sm:text-3xl relative hover:cursor-pointer hover:opacity-100 md:opacity-75 font text-accent font-semibold text-5xl xl:text-6xl'>{title}
                                 {clicked ? <motion.div
                                     initial={{ x: -100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}

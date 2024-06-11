@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { logo } from '../../utils/constant';
-import { CodeSquare, Moon } from 'lucide-react';
+import { CodeSquare, Moon, Sun } from 'lucide-react';
 import { motion } from "framer-motion"
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -62,7 +62,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.08 }}
             className={`py-1.5 rounded-full cursor-pointer`}
           >
-            <Moon className=' text-accent' />
+            {theme? <Moon className=' text-accent' /> : <Sun className=' text-white'/>}
           </motion.span>
         </div>
       </div>

@@ -5,11 +5,15 @@ import ProjectsCard from './ProjectsCard'
 import Contact from '../../components/Contact/Contact'
 import { projectData } from '../../utils/constant'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { toggleSelectedPage } from '../../utils/navbarSlice'
 
 const ProjectDescription = () => {
   const theme = useSelector((state) => state.navbar.selectedTheme);
+  const dispatch = useDispatch();
   return (
-    <div className={`${!theme? 'text-white' : ' text-black'}`}>
+    <div className={`${!theme ? 'text-white' : ' text-black'}`}>
       <div className=''>
         <Navbar />
         <div className=' vsm:max-sm:items-center md:mx-32 gap-4 flex flex-col'>
@@ -19,7 +23,10 @@ const ProjectDescription = () => {
         <div className=' py-10 md:mx-32 justify-center gap-10 flex flex-wrap'>
           {
             projectData?.map((data) => {
-              return <ProjectsCard key={data.key} overview={data.imageUrl} title={data.title} description={data.description} sourceCodeLink={data.source_code} hostedUrl={data.hostedUrl} />
+              return data.key === 2 ?
+                <Link onClick={() => dispatch(toggleSelectedPage("Home"))}><ProjectsCard
+                  key={data.key} overview={data.imageUrl} title={data.title} description={data.description} sourceCodeLink={data.source_code} hostedUrl={data.hostedUrl} /></Link>
+                : <ProjectsCard key={data.key} overview={data.imageUrl} title={data.title} description={data.description} sourceCodeLink={data.source_code} hostedUrl={data.hostedUrl} />
             })
           }
         </div>

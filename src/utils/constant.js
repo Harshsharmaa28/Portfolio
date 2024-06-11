@@ -149,7 +149,7 @@ export const educationData = [
         organisation: { name: "National Institute of Technology Patna", href: "https://www.nitp.ac.in/" },
         date: "2022 - 2026",
         location: "Patna,Bihar",
-        description: "Developing and maintaining the front end of the company's main product.",
+        description: "Exploring Technology and Learning something new every day. Learned Problem Solving and Web development skills and stills exploring many things.",
     },
     {
         title: "Senior Secondary Education",
@@ -182,7 +182,7 @@ export const projectData = [
         title: "My-portfolio",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
         source_code: "https://github.com/Harshsharmaa28/Portfolio",
-        hostedUrl: "https://harshsharma-portfolio.vercel.app/",
+        hostedUrl: "/",
         key: 2,
     },
     {

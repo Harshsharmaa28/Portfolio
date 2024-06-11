@@ -15,7 +15,7 @@ const ContactForm = ({ setsendMail }) => {
     };
 
     return (
-        <div className='flex justify-center items-center vsm:max-sm:-mt-52 w-full absolute backdrop-blur-md'>
+        <div className=' z-20 flex justify-center items-center vsm:max-sm:-mt-52 w-full absolute backdrop-blur-md'>
             <section data-aos-duration="500" data-aos="fade-up" id="contact" className="rounded-xl mx-4 sm:mx-8 md:mx-16 lg:mx-32 py-10 px-5 bg-gray-900 z-10 relative">
                 <div className='flex justify-between items-center mb-6'>
                     <div className='text-white flex gap-2 font-semibold'>

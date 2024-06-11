@@ -38,7 +38,7 @@ const Projects = () => {
             }}
             className=' shadow-xl w-[37rem] h-[20rem]' src={nexlearn} alt="" />
         </div>
-        <div className='md:hidden mx-4 vsm:max-sm:rounded-lg h-[15rem] flex justify-center items-center'>
+        <div className='sm:hidden mx-4 vsm:max-sm:rounded-lg h-[15rem] flex justify-center items-center'>
           <motion.img
             className='md:hidden rounded-md shadow-xl w-[37rem]' src={nexlearn} alt="" />
         </div>
