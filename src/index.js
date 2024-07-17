@@ -6,15 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
+import { Analytics } from "@vercel/analytics/react"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={appStore}>
-      <Router restoration="auto">
-        <App />
-      </Router>
-    </Provider>
+    <Analytics/>
+      <Provider store={appStore}>
+        <Router restoration="auto">
+          <App />
+        </Router>
+      </Provider>
   </React.StrictMode>
 );
 

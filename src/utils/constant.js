@@ -180,7 +180,7 @@ export const projectData = [
     {
         imageUrl: "./assets/portfolio.png",
         title: "My-portfolio",
-        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        description: "This my-portfolio which insides of my skills in web development and what all different projects i have made in web.",
         source_code: "https://github.com/Harshsharmaa28/Portfolio",
         hostedUrl: "/",
         key: 2,
@@ -188,7 +188,7 @@ export const projectData = [
     {
         imageUrl: "./assets/bic.png",
         title: "Karigar",
-        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        description: "A online Platform which i have During Bihar Start-up Innovation challenge to aim a online platform for workers to meet their daily job Requirements.",
         source_code: "https://github.com/Harshsharmaa28/KarigarBIC",
         hostedUrl: "https://karigar-bic-7lr9.vercel.app/",
         key: 3,
@@ -196,7 +196,7 @@ export const projectData = [
     {
         imageUrl:"./assets/netflix.png",
         title: "Netflix-Gpt",
-        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        description: "A online Platform to watch different Movies Included latest Trends with the power of AI where you can ask suggestion for movies to Watch.",
         source_code: "https://github.com/Harshsharmaa28/Netflix-Gpt",
         hostedUrl: "https://harsh-netflix-gpt.vercel.app/",
         key: 4,
@@ -204,7 +204,7 @@ export const projectData = [
     {
         imageUrl:"./assets/calci.png",
         title: "Calculator",
-        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        description: "A Calculator with all the functionality of a basic calculator where you can change theme according to your preference dark or light.",
         source_code: "https://github.com/Harshsharmaa28/Calculator",
         hostedUrl: "https://harshsharmaa28.github.io/Calculator/",
         key: 4,
@@ -212,7 +212,7 @@ export const projectData = [
     {
         imageUrl:"./assets/giphy.png",
         title: "Nex-Learn",
-        description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",
+        description: "A Platform with the power of Giphy APIs where you can find you favourite Giphys in a search just login and find you Giphy.",
         source_code: "https://github.com/Harshsharmaa28/Giphy-storee",
         hostedUrl: "https://giphy-store-rtl3.vercel.app/",
         key: 4,
