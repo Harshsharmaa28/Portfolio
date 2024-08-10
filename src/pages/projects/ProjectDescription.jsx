@@ -16,11 +16,11 @@ const ProjectDescription = () => {
     <div className={`${!theme ? 'text-white' : ' text-black'}`}>
       <div className=''>
         <Navbar />
-        <div className=' vsm:max-sm:items-center md:mx-32 gap-4 flex flex-col'>
+        <div className=' vsm:max-xl:items-center xl:mx-32 mx-4 gap-4 flex flex-col'>
           <span className='  text-5xl font-medium text-accent'>Projects</span>
           <span className=''>Here are some of my projects I'd like to share</span>
         </div>
-        <div className=' py-10 md:mx-32 justify-center gap-10 flex flex-wrap'>
+        <div className=' py-10 xl:mx-32 justify-center gap-10 flex flex-wrap'>
           {
             projectData?.map((data) => {
               return data.key === 2 ?

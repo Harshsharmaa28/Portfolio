@@ -21,8 +21,8 @@ const Navbar = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className=' vsm:max-sm:flex vsm:max-sm:justify-center z-10 sticky top-0 overflow-hidden'>
-      <div className=' py-14 md:py-24 flex justify-between md:mx-32 h-20 items-center'>
+    <div className='vsm:max-lg:mx-4 vsm:max-sm:flex vsm:max-sm:justify-center z-10 sticky top-0 overflow-hidden'>
+      <div className=' py-14 md:py-24 flex justify-between lg:mx-32 h-20 items-center'>
         <div className='  vsm:max-sm:hidden'>
           <img className=' vsm:max-sm:hidden w-[5rem] h-[5rem]' src={logo} alt="" />
         </div>

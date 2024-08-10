@@ -16,7 +16,7 @@ const Homepage = () => {
                         },
                     },
                 }}
-                className='vsm:max-sm:mx-4 w-screen  flex flex-col md:mx-32 md:py-20 flex-wrap'>
+                className='vsm:max-xl:mx-4 w-screen  flex flex-col xl:mx-32 md:py-20 flex-wrap'>
                 <h1 data-aos="fade-up" data-aos-duration="500" className={` vsm:max-sm:text-6xl py-2 text-accent font-bold text-8xl`}>Harsh Sharma</h1>
                 <motion.span
                   data-aos-offset="0"  data-aos="fade-up" data-aos-duration="1000" className={`vsm:max-sm:text-2xl font-bold text-black text-3xl ${!theme? 'text-white' : ' text-black'}`}>Front and React.js Developer</motion.span>

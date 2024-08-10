@@ -8,7 +8,7 @@ const ProjectHeading = ({ Sno, title, tech }) => {
     const [clicked, setClick] = useState(false);
     const dispatch = useDispatch();
     return (
-        <div className=' mx-4 md:mx-32 flex flex-col'>
+        <div className=' mx-4 xl:mx-32 flex flex-col'>
             <div className='py-6'>
                 <div className='flex flex-col'>
                     <div className=' flex gap-2 w-auto'>

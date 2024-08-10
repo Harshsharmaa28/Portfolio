@@ -7,8 +7,8 @@ import { useSelector } from 'react-redux'
 const ProjectsCard = ({ overview, title, description, sourceCodeLink, hostedUrl }) => {
     const theme = useSelector((state) => state.navbar.selectedTheme);
     return (
-        <div className={`vsm:max-sm:mx-4 rounded-xl ${!theme? 'text-white border border-accent' : ' text-black'}`}>
-            <div data-aos="fade-up" data-aos-duration="500" className=' shadow-lg md:max-lg:w-[33vw]  lg:w-[38vw] rounded-xl md:border-2 flex flex-col'>
+        <div className={`vsm:max-lg:mx-4 rounded-xl ${!theme? 'text-white border border-accent' : ' text-black'}`}>
+            <div data-aos="fade-up" data-aos-duration="500" className=' shadow-lg md:max-lg:w-[33vw] md:max-lg:h-[25rem]  lg:w-[38vw] rounded-xl md:border-2 flex flex-col'>
                 <img className=' border-b-1 rounded-t-xl w-full md:h-[20rem]' src={overview} alt="Error in loading image" />
                 <div className={` py-4 px-4 md:py-6 ${!theme? 'text-white' : ' text-black'}`}>
                     <div className=' flex flex-col gap-1 flex-wrap'>
