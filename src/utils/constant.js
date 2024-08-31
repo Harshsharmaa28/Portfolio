@@ -170,6 +170,14 @@ export const educationData = [
 
 export const projectData = [
     {
+        imageUrl: "./assets/ChatVerse.png",
+        title: "Chat-Verse",
+        description: "ChatVerse is a Full Stack Chatting App. Uses Socket.io for real time communication.",
+        source_code: "https://github.com/Harshsharmaa28/chatApp",
+        hostedUrl: "https://chat-verse-talk.vercel.app/",
+        key: 0,
+    },
+    {
         imageUrl: "./assets/nex.png",
         title: "Nex-Learn",
         description: "A online Learning for College Students to perform outstanding in their college exam and also to provide them a proper rodemap and mentorship.",

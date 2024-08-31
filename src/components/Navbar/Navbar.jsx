@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className='  vsm:max-sm:hidden'>
           <img className=' vsm:max-sm:hidden w-[5rem] h-[5rem]' src={logo} alt="" />
         </div>
-        <div className={`backdrop-blur-md shadow-md ring-1 ${ theme ? ' ring-zinc-200' : ' ring-accent'}  flex gap-4 px-6 border-s-fuchsia-900 h-14 rounded-full justify-center items-center`}>
+        <div className={`backdrop-blur-md shadow-md ring-1 ${ theme ? ' ring-zinc-200' : ' ring-accent'}  flex gap-4 px-4 border-s-fuchsia-900 h-14 rounded-full justify-center items-center`}>
           <motion.span
             whileHover={{ scale: 1.08 }}
             onClick={() => {
