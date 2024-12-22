@@ -168,6 +168,16 @@ export const educationData = [
     // Add more static items as needed
 ];
 
+export const ExperienceData = [
+    {
+        title: "Frontend Developer Intern",
+        organisation: { name: "Globeia", href: "https://www.globeia.com/" },
+        date: "November 2024 - January 2025",
+        location: "Remote",
+        description: "",
+    },
+]
+
 export const projectData = [
     {
         imageUrl: "./assets/ChatVerse.png",

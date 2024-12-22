@@ -6,8 +6,8 @@ const AboutMe = () => {
     const theme = useSelector((state) => state.navbar.selectedTheme);
     return (
         <div className='vsm:max-md:flex-col vsm:max-sm:items-center xl:mx-32 flex'>
-            <div className='vsm:max-sm:justify-center vsm:max-md:w-screen flex justify-center'>
-                <img data-aos="fade-up" data-aos-duration="1000"  className='sm:max-md:px-10 md:max-xl:mx-4 h-[20rem] w-[90%] md:max-xl:w-[20rem] lg:w-[30rem] lg:h-[30rem] bg-blue-100' src="" alt="Error in loading" />
+            <div className='vsm:max-sm:justify-center vsm:max-md:w-screen flex justify-center w-[100%]'>
+                <img data-aos="fade-up" data-aos-duration="1000"  className='sm:max-md:px-10 md:max-xl:mx-4 h-[20rem] w-[90%] md:max-xl:w-[20rem] rounded-xl shadow-2xl shadow-gray-800 object-cover lg:w-[30rem] lg:h-[30rem]' src="./assets/Bgphoto.webp" alt="Error in loading" />
             </div>
             <div className=' vsm:max-lg:mx-4 lg:px-24 flex flex-col vsm:max-sm:items-center'>
                 <h1 data-aos="fade-up" data-aos-duration="600" className=' vsm:max-sm:py-4 text-8xl text-accent font-semibold'>Hi, I'm Harsh Sharma</h1>
